@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Travel Blog</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(206, 150, 155);
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #6a0dad;
+        color: #fff;
+        padding: 10px 20px;
+      }
+
+      .navbar h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar ul li {
+        display: inline;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      /* Header Styles */
+      .header {
+        text-align: center;
+        padding: 50px;
+      }
+
+      .header h1 {
+        color: purple;
+        font-size: 3em;
+      }
+
+      hr {
+        border: 1px solid #6a0dad;
+        margin: 20px 0;
+      }
+
+      /* Main Content Styles */
+      .content {
+        padding: 20px 50px;
+        font-size: 1.2em;
+      }
+
+      .content div {
+        margin-bottom: 20px;
+      }
+
+      .content h2,
+      .content h3 {
+        color: #6a0dad;
+      }
+
+      .content span {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      /* Image Section Styles */
+      .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .image-gallery img {
+        border-radius: 10px;
+        height: 200px;
+        width: 250px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Footer Styles */
+      .footer {
+        background-color: #6a0dad;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 2em;
+        }
+
+        .content {
+          padding: 20px;
+        }
+
+        .navbar ul {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .navbar ul li {
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+      <h1>My Travel Blog</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#places">Places Visited</a></li>
+        <li><a href="#shopping">What I Bought</a></li>
+        <li><a href="#food">Favorite Foods</a></li>
+        <li><a href="#saint-martin">Saint Martin</a></li>
+      </ul>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+      <h1>Welcome to My Travel Blog</h1>
+      <hr />
+      <div class="w-2000px">
+        <img src="./travel.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+      <div id="places">
+        <p>
+          This blog is about our rag tour of our university
+          <b title="Hajee Mohammad Danesh Science and Technology University"
+            >(HSTU)</b
+          >. About 35 students and 3 teachers attended this tour. We visited
+          <b
+            >Sajek, Rangamati, Bandarban, Cox's Bazar, and Saint Martin
+            Island</b
+          >.
+        </p>
+      </div>
+
+      <div id="shopping">
+        <h2>What I Bought</h2>
+        <ul>
+          <li>Handmade chador from Rangamati</li>
+          <li>Hatpakha (hand fan)</li>
+          <li>Beautiful bangles</li>
+          <li>Chocolates</li>
+          <li>Comfortable sandals</li>
+          <li>Pearl jewelry from Cox's Bazar</li>
+          <li>Stylish bracelets</li>
+        </ul>
+      </div>
+
+      <div id="food">
+        <h2>My Favorite Food</h2>
+        <p>
+          Some of my favorite foods bring unique flavors and comfort. They
+          include:
+        </p>
+        <ul>
+          <li>Laitta fish fry</li>
+          <li>Biriyani from Kacchi Dine</li>
+          <li>Fish BBQ</li>
+          <li>Hillside chicken</li>
+          <li>Pickles</li>
+          <li>Fish vorta</li>
+          <li>Khichuri</li>
+        </ul>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="image-gallery">
+        <img src="./Fish fry.jpeg" alt="Fish Fry" />
+        <img src="./Kacchi.jpeg" alt="Kacchi Biriyani" />
+        <img src="./FIsh vorta.jpeg" alt="Fish Vorta" />
+        <img src="./Khichuri.jpeg" alt="Khichuri" />
+      </div>
+
+      <!-- Saint Martin Section -->
+      <div id="saint-martin">
+        <h2>Saint Martin: My Favourite Place</h2>
+        <div class="w-[2000px] flex justify-center">
+          <img class="w-[2000px]" src="./saintmartin.jpg" alt="Saint Martin" />
+        </div>
+
+        <p>
+          Saint Martin's Island is a beautiful coral island in the Bay of
+          Bengal, known for its crystal-clear waters and vibrant marine life.
+          With swaying coconut trees and a starry sky at night, it feels like a
+          paradise.
+        </p>
+        <p>
+          It’s a place where nature and serenity come together perfectly.
+          <a href="https://www.youtube.com/watch?v=Ln7kAGe85P0" target="_blank"
+            >Watch a video about Saint Martin</a
+          >.
+        </p>
+        <h3>A Poem for Saint Martin</h3>
+        <pre>
+"On sands so soft, where waves meet the shore,
+ I find peace that I long for more.
+ Sun above shines with warmth so true,
+ While waves wash sands in colors of blue.
+ Saint Martin, you hold my heart,
+ In your embrace, I never want to part."
+            </pre
+        >
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <p>&copy; 2024 My Travel Blog. All rights reserved.</p>
+    </div>
+  </body>
+</html>
