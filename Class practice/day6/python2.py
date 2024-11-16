@@ -68,8 +68,16 @@ print(random.randrange(1, 10))
 
 #python casting
 x = int(1)  
-z = float("3")  
-x = str("s1") 
+y = float("3")  
+z = str("s1") 
+
+print(x)
+print(y)
+print(z)
+
+print(type(x))
+print(type(y))
+print(type(z))
 
 #Assigning multiple strings
 a = """ lorem i dsgfefngh
